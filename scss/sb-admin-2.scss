@@ -10,6 +10,7 @@
 @import "utilities.scss";
 
 // Custom Components
+@import "fonts.scss";
 @import "dropdowns.scss";
 @import "navs.scss";
 @import "buttons.scss";
@@ -19,9 +20,33 @@
 @import "error.scss";
 @import "footer.scss";
 
-$rojo: #A41D36;
+/* Theme Invex */
+$brand-invex: #A41D36;
+$grey-dark:#424242;
 
-.test {
-    color:$rojo;
+
+.home {
+    /* background-image: url(../img/operaciones-fx.jpg); */
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
+.toggled {
+    .sidebar-brand-icon {
+        img {
+            // width: 85%;
+        }
+    }
+}
+
+.sidebar-brand-icon img {
+    width: 100%;
+}
+
+.bg-brand {
+    background-color: $brand-invex !important;
+}
+
+.btn-link {
+    color: white;
+}

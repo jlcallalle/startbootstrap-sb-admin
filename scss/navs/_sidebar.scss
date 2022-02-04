@@ -16,8 +16,10 @@
             width: $sidebar-collapsed-width;
 
             span {
-                font-size: 0.65rem;
+                /* font-size: 0.65rem; */
+                font-size: 1rem;
                 display: block;
+                color:#424242;
             }
         }
 
@@ -99,6 +101,7 @@
         cursor: pointer;
 
         &::after {
+            color:#424242;
             font-weight: 900;
             content: '\f104';
             font-family: 'Font Awesome 5 Free';
