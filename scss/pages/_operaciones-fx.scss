@@ -1,0 +1,131 @@
+
+/* Theme Invex */
+$brand-invex: #A41D36;
+$grey-dark:#424242;
+$grey-2:#8A8A8A;
+
+.home {
+    /* background-image: url(../img/operaciones-fx.jpg); */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.sidebar-brand-icon img {
+    width: 100%;
+}
+
+.bg-brand {
+    background-color: $brand-invex !important;
+}
+
+.btn-link {
+    color: white;
+    &:hover {
+        color: $brand-invex;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.sidebar {
+    @include media-breakpoint-up(md) { 
+        width: 17.5rem!important;
+    }
+    .nav-item {
+        margin-bottom: 14px;
+        .nav-link {
+            @include media-breakpoint-up(md) { 
+                padding: 1rem 1rem 1rem 2.5rem;
+                display: flex;
+            }
+            img {
+                opacity: 0.6;
+                @include media-breakpoint-up(md) {  
+                    margin-right: 12px;
+                }
+            }
+            span {
+                color:$grey-2;
+                @include media-breakpoint-up(md) { 
+                    font-size: 1rem;
+                    line-height: 20px;
+                }
+            }
+        }
+        &.active {
+            .nav-link {
+                img {
+                    opacity: 1;
+                }
+                span {
+                    color:$grey-dark;
+                }
+            }
+        }
+    }
+    #sidebarToggle {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        &:after {
+            display: none;
+        }
+    }
+
+    &.toggled {
+        #sidebarToggle {
+            transform: rotate(180deg);
+        }
+        .nav-item {
+            margin-bottom: 8px;
+            .nav-link {
+                @include media-breakpoint-up(md) { 
+                    padding: 1rem;
+                    display: block;
+                }
+                img {
+                    @include media-breakpoint-up(md) {  
+                        margin-right: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.topbar {
+    #sidebarToggleTop {
+      box-shadow: none;
+      &:hover {
+        background-color: white;
+      }
+      &:active {
+        background-color: white;
+      }
+    }
+    .nav-item {
+        .nav-link {
+            img {
+                max-width: inherit;
+            }
+        }
+    }
+}
+
+.box-arrow {
+    padding-left: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 18px;
+}
+
+.icon-hamburger {
+    width: 14px;
+    max-width: 14px;
+    position: relative;
+    /* top: -1px; */
+    top: -2px;
+    left: -6px;
+}
+/* Page Operaciones FX*/
