@@ -1,0 +1,16 @@
+{% snippet 'shared/general/head_tag_manager' %}
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>{{ page_title }} - {{ site.name }}</title>
+{% snippet "shared/general/seo" %}
+{{ site.favicon_link }}
+{{ site.apple_touch_icons }}
+{% if site.use_pwa_manifest %}
+<link rel="manifest" href="{{ site.manifest_url }}">
+{% endif %}
+<!-- Javascript -->
+{{ 'base' | asset_url: 'js' | script_tag }}
+<!-- Style -->
+{{ 'base' | asset_url: 'css' | stylesheet_tag: media: 'screen' }}
+<!-- CSRF meta tags -->
+{% csrf_meta %}

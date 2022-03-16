@@ -1,0 +1,186 @@
+{% html5 %} <!-- HTML header with browser directives -->
+<head>
+  {% snippet 'shared/general/head' %}
+</head>
+{% body %} <!-- Body with automatic context classes -->
+<div id="wrapper">
+				 <!-- Sidebar -->
+        <ul class="navbar-nav sidebar accordion" id="accordionSidebar">
+
+          <a class="sidebar-brand bg-brand d-flex align-items-center justify-content-center" href="https://invex.modyo.be/invex">
+              <div class="sidebar-brand-icon">
+                  <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/380e929f-b6be-4fc0-bd54-2984012aef86/original/logo-invex.svg" alt="invex">
+              </div>
+          </a>
+
+          <div class="box-arrow d-none d-md-inline">
+              <button class="rounded-circle border-0" id="sidebarToggle">
+                  <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/57f6fd93-d2f1-442e-90b0-b9da8bf4f1e0/original/icon-arrow-left.svg" alt="">
+              </button>
+          </div>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/48a60ee3-3bcc-4ffa-a217-85fd5106123d/original/icon-casa.svg" alt="Inicio">			
+                  <span>Inicio</span></a>
+          </li>
+
+          <li class="nav-item active">
+              <a class="nav-link" href="https://invex.modyo.be/invex">
+                  <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/48438d79-b739-404f-af83-00da7b259c3f/original/icon-operacionesfx.svg" alt="Operaciones FX">
+                  <span>Operaciones FX</span></a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/a89479d8-9ca8-4849-8803-2ab84dfbd30d/original/icon-historial.svg" alt="Historial de Operaciones">
+                  <span>Historial de Operaciones</span></a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/aeb64f0b-ed7c-4562-87cd-0ede307ba112/original/icon-cuentas.svg" alt="Cuentas">
+                  <span>Cuentas</span></a>
+          </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+              <nav class="navbar navbar-expand bg-brand topbar mb-4 static-top">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <!-- <i class="fa fa-bars"></i>-->
+                      <img class="icon-hamburger" src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/9f622b90-7be4-44d5-a87d-4c24186e8cd4/original/icon-hamburger.svg" alt="">
+                </button>
+            
+                <!-- Topbar Navbar -->
+                <ul class="navbar-nav ml-auto pr-4">
+            
+                    <!-- Nav Item - Alerts -->
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <!-- <i class="fas fa-question-circle"></i> -->
+                            <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/f07bee06-f8af-45d1-91cb-d179c2d9a2b8/original/icon-pregunta.svg" alt="pregunta">
+                        </a>
+                    </li>
+            
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/10dc6209-fa73-4ff8-b7c1-cc9c02f65825/original/icon-reloj.svg" alt="reloj">
+                        </a>
+                    </li>
+            
+                    <!-- Nav Item - Alerts -->
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <i class="fas fa-bell fa-fw"></i> -->
+                            <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/bf641aa9-4f05-4398-a117-baf0183e4b11/original/icon-alerta.svg" alt="alerta">
+                        </a>
+                        <!-- Dropdown - Alerts -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">
+                                Alerts Center
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-primary">
+                                        <i class="fas fa-file-alt text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 12, 2019</div>
+                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-success">
+                                        <i class="fas fa-donate text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 7, 2019</div>
+                                    $290.29 has been deposited into your account!
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-warning">
+                                        <i class="fas fa-exclamation-triangle text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 2, 2019</div>
+                                    Spending Alert: We've noticed unusually high spending for your account.
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                        </div>
+                    </li>
+            
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <img class="img-profile rounded-circle" src="img/undraw_profile.svg"> -->
+                            <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/19d2e0ad-ae94-474e-b09f-a937bf5a2d19/original/icon-persona.svg" alt="persona">
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Activity Log
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+            
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/79488f53-6515-4b3f-9331-1ef00f766159/original/icon-salir.svg" alt="salir">
+                        </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+
+                <div class="container-fluid box-contenido">
+										<!--  <h1 class="mb-4 title-widget">Operaciones FX</h1> -->
+										{{ content_for_layout }}
+                </div>
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+</div>
+<script>
+	{% snippet "main_js" %}
+</script>
+{% endbody %}
+{% endhtml5 %}
