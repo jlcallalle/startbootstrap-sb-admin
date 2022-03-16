@@ -5,9 +5,12 @@ $grey-dark:#424242;
 $grey-2:#8A8A8A;
 
 .home {
-    /* background-image: url(../img/operaciones-fx.jpg); */
+   /*  background-image: url(../img/m-operacion.jpg); */
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+#wrapper #content-wrapper {
+    background-color: transparent;
 }
 
 .sidebar-brand-icon img {
@@ -29,11 +32,23 @@ $grey-2:#8A8A8A;
 }
 
 .sidebar {
+    padding: 4.5rem 2rem;
+    background-color: white;
+    position: fixed;
+    width: 16rem;
+    z-index: 10;
     @include media-breakpoint-up(md) { 
+        position: relative;
         width: 17.5rem!important;
+        display: block;
+        padding: 0;
     }
     .nav-item {
         margin-bottom: 14px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+        @include media-breakpoint-up(md) {  
+            border-bottom:none;
+        }
         .nav-link {
             @include media-breakpoint-up(md) { 
                 padding: 1rem 1rem 1rem 2.5rem;
@@ -41,6 +56,7 @@ $grey-2:#8A8A8A;
             }
             img {
                 opacity: 0.6;
+                margin-right: 12px;
                 @include media-breakpoint-up(md) {  
                     margin-right: 12px;
                 }
@@ -95,9 +111,48 @@ $grey-2:#8A8A8A;
     }
 }
 
+
+.box-arrow {
+    padding-left: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 18px;
+}
+
+.icon-hamburger {
+    width: 14px;
+    max-width: 14px;
+    position: relative;
+    top: -2px;
+    left: -6px;
+}
+
+/* REESTRUCTURA DASHBOARD MOVIL */
+
 .topbar {
+    position: relative;
+    height: 110px;
+    width: 100%;
+    left: 0;
+    padding-top: 25px;
+    @include media-breakpoint-up(md) { 
+      height: $topbar-base-height;
+      position: relative;
+      width: auto;
+      left: auto;
+      padding-top: 8px;
+    }
+
     #sidebarToggleTop {
       box-shadow: none;
+      position: absolute;
+      bottom: -40px;
+      right: 20px;
+      @include media-breakpoint-up(md) { 
+        position: relative;
+        bottom: auto;
+        left: auto;
+      }
+
       &:hover {
         background-color: white;
       }
@@ -114,18 +169,149 @@ $grey-2:#8A8A8A;
     }
 }
 
-.box-arrow {
-    padding-left: 2.5rem;
-    margin-top: 3rem;
-    margin-bottom: 18px;
+.navbar {
+    flex-direction: column;
+    justify-content: center;
+    @include media-breakpoint-up(md) { 
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
 
-.icon-hamburger {
-    width: 14px;
-    max-width: 14px;
-    position: relative;
-    /* top: -1px; */
-    top: -2px;
-    left: -6px;
+/* ============ Modal fade right/left ============ */
+
+.wrapper-modal {
+    .modal.fade .modal-dialog {
+        transition: -webkit-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+        -webkit-transform: translate(0, -50px);
+        transform: translate(0, -50px);
+    }
+    
+    .modal.show .modal-dialog {
+        -webkit-transform: none;
+        transform: none;
+    }
+    
+    .modal.left .modal-dialog,
+    .modal.right .modal-dialog {
+        position: fixed;
+        margin: auto;
+        /* max-width: 260px;
+        width: 260px; */
+        max-width: 260px;
+        width: 70%;
+        height: 100%;
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        -o-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+    
+    .modal.left .modal-content,
+    .modal.right .modal-content {
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    .modal.left.fade .modal-dialog{
+        left: 0;
+        transform: translateX(-100%);
+        transition: .3s;
+    }
+    .modal.left.fade.show .modal-dialog {
+        transform: translateX(0%);
+    }
+    .modal.left.fade.in .modal-dialog{
+        left: 0;
+        transform: translateX(-100%);
+    }
+    
+    .modal.right.fade .modal-dialog {
+        right: 0;
+        transform: translateX(100%);
+        transition: .3s;
+    }
+    .modal.right.fade.show .modal-dialog {
+        transform: translateX(0%);
+    }
+    .modal.right.fade.in .modal-dialog {
+        right: 0;
+    }
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        /* border: 1px solid rgba(0, 0, 0, 0.2); */
+        border-radius: 0.3rem;
+        outline: 0;
+    }
 }
-/* Page Operaciones FX*/
+
+
+/* ============ Modal offCanvas ============ */
+
+body.offcanvas-active{
+    overflow:hidden;
+}
+
+.screen-darken{
+    height: 100%;
+    width:0%;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity:0;
+    visibility:hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active {
+    z-index:10; 
+    transition:opacity .3s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 767px) {
+    
+    .mobile-offcanvas{
+        visibility: hidden;
+        transform:translateX(-100%);
+        border-radius:0; 
+        display:block;
+        position: fixed;
+        top: 0; left:0;
+        height: 100%;
+        z-index: 1200;
+        width:70%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+    }
+
+    .mobile-offcanvas.show{
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .mobile-offcanvas .container, .mobile-offcanvas .container-fluid {
+        display: block;
+    }
+
+}	
+
+.row-menu {
+    height: 45px;
+    background-color: #fff;
+    padding:0 10px;
+}

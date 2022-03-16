@@ -10420,12 +10420,21 @@ a:focus {
   margin-bottom: 1rem;
 }
 .sidebar .nav-item .nav-link {
-  text-align: center;
+  text-align: left;
   padding: 0.75rem 1rem;
-  width: 6.5rem;
+  width: 100%;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .sidebar .nav-item .nav-link {
+    text-align: center;
+    font-size: 1rem;
+    width: 6.5rem;
+    display: block;
+  }
 }
 .sidebar .nav-item .nav-link span {
-  font-size: 0.65rem;
+  font-size: 1rem;
   display: block;
   color: #424242;
 }
@@ -10510,10 +10519,6 @@ a:focus {
 }
 .sidebar #sidebarToggle:focus {
   outline: none;
-}
-.sidebar.toggled {
-  width: 0 !important;
-  overflow: hidden;
 }
 .sidebar.toggled #sidebarToggle::after {
   content: "";
@@ -10985,67 +10990,67 @@ form.user .btn-user {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(63px, 9999px, 5px, 0);
+    clip: rect(6px, 9999px, 66px, 0);
   }
   5% {
-    clip: rect(69px, 9999px, 99px, 0);
+    clip: rect(46px, 9999px, 68px, 0);
   }
   10% {
-    clip: rect(53px, 9999px, 38px, 0);
+    clip: rect(2px, 9999px, 46px, 0);
   }
   15% {
-    clip: rect(65px, 9999px, 14px, 0);
+    clip: rect(97px, 9999px, 5px, 0);
   }
   20% {
-    clip: rect(97px, 9999px, 46px, 0);
-  }
-  25% {
-    clip: rect(87px, 9999px, 80px, 0);
-  }
-  30% {
-    clip: rect(100px, 9999px, 39px, 0);
-  }
-  35% {
-    clip: rect(47px, 9999px, 27px, 0);
-  }
-  40% {
-    clip: rect(69px, 9999px, 12px, 0);
-  }
-  45% {
     clip: rect(83px, 9999px, 92px, 0);
   }
+  25% {
+    clip: rect(47px, 9999px, 94px, 0);
+  }
+  30% {
+    clip: rect(43px, 9999px, 83px, 0);
+  }
+  35% {
+    clip: rect(100px, 9999px, 93px, 0);
+  }
+  40% {
+    clip: rect(67px, 9999px, 38px, 0);
+  }
+  45% {
+    clip: rect(19px, 9999px, 91px, 0);
+  }
   50% {
-    clip: rect(4px, 9999px, 88px, 0);
+    clip: rect(47px, 9999px, 62px, 0);
   }
   55% {
-    clip: rect(11px, 9999px, 32px, 0);
+    clip: rect(61px, 9999px, 14px, 0);
   }
   60% {
-    clip: rect(37px, 9999px, 94px, 0);
+    clip: rect(99px, 9999px, 97px, 0);
   }
   65% {
-    clip: rect(60px, 9999px, 17px, 0);
+    clip: rect(75px, 9999px, 61px, 0);
   }
   70% {
-    clip: rect(35px, 9999px, 9px, 0);
+    clip: rect(15px, 9999px, 97px, 0);
   }
   75% {
-    clip: rect(21px, 9999px, 88px, 0);
+    clip: rect(35px, 9999px, 42px, 0);
   }
   80% {
-    clip: rect(88px, 9999px, 29px, 0);
+    clip: rect(36px, 9999px, 45px, 0);
   }
   85% {
-    clip: rect(49px, 9999px, 6px, 0);
+    clip: rect(67px, 9999px, 8px, 0);
   }
   90% {
-    clip: rect(53px, 9999px, 89px, 0);
+    clip: rect(39px, 9999px, 50px, 0);
   }
   95% {
-    clip: rect(74px, 9999px, 73px, 0);
+    clip: rect(94px, 9999px, 51px, 0);
   }
   100% {
-    clip: rect(63px, 9999px, 3px, 0);
+    clip: rect(48px, 9999px, 21px, 0);
   }
 }
 .error:after {
@@ -11063,67 +11068,67 @@ form.user .btn-user {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(22px, 9999px, 47px, 0);
+    clip: rect(93px, 9999px, 58px, 0);
   }
   5% {
-    clip: rect(70px, 9999px, 74px, 0);
+    clip: rect(22px, 9999px, 3px, 0);
   }
   10% {
-    clip: rect(45px, 9999px, 72px, 0);
+    clip: rect(58px, 9999px, 76px, 0);
   }
   15% {
-    clip: rect(26px, 9999px, 75px, 0);
+    clip: rect(64px, 9999px, 58px, 0);
   }
   20% {
-    clip: rect(22px, 9999px, 43px, 0);
+    clip: rect(7px, 9999px, 75px, 0);
   }
   25% {
-    clip: rect(29px, 9999px, 75px, 0);
+    clip: rect(58px, 9999px, 70px, 0);
   }
   30% {
-    clip: rect(41px, 9999px, 79px, 0);
+    clip: rect(86px, 9999px, 25px, 0);
   }
   35% {
-    clip: rect(50px, 9999px, 61px, 0);
+    clip: rect(92px, 9999px, 8px, 0);
   }
   40% {
-    clip: rect(61px, 9999px, 85px, 0);
+    clip: rect(99px, 9999px, 7px, 0);
   }
   45% {
-    clip: rect(3px, 9999px, 77px, 0);
+    clip: rect(97px, 9999px, 30px, 0);
   }
   50% {
-    clip: rect(4px, 9999px, 31px, 0);
+    clip: rect(49px, 9999px, 79px, 0);
   }
   55% {
-    clip: rect(47px, 9999px, 62px, 0);
+    clip: rect(80px, 9999px, 89px, 0);
   }
   60% {
-    clip: rect(26px, 9999px, 45px, 0);
+    clip: rect(46px, 9999px, 44px, 0);
   }
   65% {
-    clip: rect(27px, 9999px, 24px, 0);
+    clip: rect(72px, 9999px, 100px, 0);
   }
   70% {
-    clip: rect(30px, 9999px, 56px, 0);
+    clip: rect(26px, 9999px, 67px, 0);
   }
   75% {
-    clip: rect(3px, 9999px, 24px, 0);
+    clip: rect(1px, 9999px, 39px, 0);
   }
   80% {
-    clip: rect(39px, 9999px, 10px, 0);
+    clip: rect(33px, 9999px, 61px, 0);
   }
   85% {
-    clip: rect(24px, 9999px, 41px, 0);
+    clip: rect(11px, 9999px, 67px, 0);
   }
   90% {
-    clip: rect(49px, 9999px, 74px, 0);
+    clip: rect(27px, 9999px, 12px, 0);
   }
   95% {
-    clip: rect(15px, 9999px, 9px, 0);
+    clip: rect(16px, 9999px, 94px, 0);
   }
   100% {
-    clip: rect(88px, 9999px, 43px, 0);
+    clip: rect(58px, 9999px, 66px, 0);
   }
 }
 .error:before {
@@ -11154,9 +11159,13 @@ body.sidebar-toggled footer.sticky-footer {
 
 /* Theme Invex */
 .home {
-  /* background-image: url(../img/operaciones-fx.jpg); */
+  /*  background-image: url(../img/m-operacion.jpg); */
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+#wrapper #content-wrapper {
+  background-color: transparent;
 }
 
 .sidebar-brand-icon img {
@@ -11177,13 +11186,29 @@ body.sidebar-toggled footer.sticky-footer {
   box-shadow: none;
 }
 
+.sidebar {
+  padding: 4.5rem 2rem;
+  background-color: white;
+  position: fixed;
+  width: 16rem;
+  z-index: 10;
+}
 @media (min-width: 768px) {
   .sidebar {
+    position: relative;
     width: 17.5rem !important;
+    display: block;
+    padding: 0;
   }
 }
 .sidebar .nav-item {
   margin-bottom: 14px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+}
+@media (min-width: 768px) {
+  .sidebar .nav-item {
+    border-bottom: none;
+  }
 }
 @media (min-width: 768px) {
   .sidebar .nav-item .nav-link {
@@ -11193,6 +11218,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 .sidebar .nav-item .nav-link img {
   opacity: 0.6;
+  margin-right: 12px;
 }
 @media (min-width: 768px) {
   .sidebar .nav-item .nav-link img {
@@ -11240,8 +11266,49 @@ body.sidebar-toggled footer.sticky-footer {
   }
 }
 
+.box-arrow {
+  padding-left: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 18px;
+}
+
+.icon-hamburger {
+  width: 14px;
+  max-width: 14px;
+  position: relative;
+  top: -2px;
+  left: -6px;
+}
+
+/* REESTRUCTURA DASHBOARD MOVIL */
+.topbar {
+  position: relative;
+  height: 110px;
+  width: 100%;
+  left: 0;
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  .topbar {
+    height: 4.375rem;
+    position: relative;
+    width: auto;
+    left: auto;
+    padding-top: 8px;
+  }
+}
 .topbar #sidebarToggleTop {
   box-shadow: none;
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+}
+@media (min-width: 768px) {
+  .topbar #sidebarToggleTop {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
 }
 .topbar #sidebarToggleTop:hover {
   background-color: white;
@@ -11253,21 +11320,141 @@ body.sidebar-toggled footer.sticky-footer {
   max-width: inherit;
 }
 
-.box-arrow {
-  padding-left: 2.5rem;
-  margin-top: 3rem;
-  margin-bottom: 18px;
+.navbar {
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
-.icon-hamburger {
-  width: 14px;
-  max-width: 14px;
+/* ============ Modal fade right/left ============ */
+.wrapper-modal .modal.fade .modal-dialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+.wrapper-modal .modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+.wrapper-modal .modal.left .modal-dialog,
+.wrapper-modal .modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  /* max-width: 260px;
+  width: 260px; */
+  max-width: 260px;
+  width: 70%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+.wrapper-modal .modal.left .modal-content,
+.wrapper-modal .modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+.wrapper-modal .modal.left.fade .modal-dialog {
+  left: 0;
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+.wrapper-modal .modal.left.fade.show .modal-dialog {
+  transform: translateX(0%);
+}
+.wrapper-modal .modal.left.fade.in .modal-dialog {
+  left: 0;
+  transform: translateX(-100%);
+}
+.wrapper-modal .modal.right.fade .modal-dialog {
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+.wrapper-modal .modal.right.fade.show .modal-dialog {
+  transform: translateX(0%);
+}
+.wrapper-modal .modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+.wrapper-modal .modal-content {
   position: relative;
-  /* top: -1px; */
-  top: -2px;
-  left: -6px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  border-radius: 0.3rem;
+  outline: 0;
 }
 
-/* Page Operaciones FX*/
+/* ============ Modal offCanvas ============ */
+body.offcanvas-active {
+  overflow: hidden;
+}
+
+.screen-darken {
+  height: 100%;
+  width: 0%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition: opacity 0.2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active {
+  z-index: 10;
+  transition: opacity 0.3s ease, width 0s;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 767px) {
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mobile-offcanvas .container, .mobile-offcanvas .container-fluid, .mobile-offcanvas .container-sm, .mobile-offcanvas .container-md, .mobile-offcanvas .container-lg, .mobile-offcanvas .container-xl {
+    display: block;
+  }
+}
+.row-menu {
+  height: 45px;
+  background-color: #fff;
+  padding: 0 10px;
+}
 
 /*# sourceMappingURL=sb-admin-2.css.map */
