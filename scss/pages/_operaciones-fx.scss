@@ -9,9 +9,6 @@ $grey-2:#8A8A8A;
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-#wrapper #content-wrapper {
-    background-color: transparent;
-}
 
 .sidebar-brand-icon img {
     width: 100%;
@@ -126,7 +123,62 @@ $grey-2:#8A8A8A;
     left: -6px;
 }
 
-/* REESTRUCTURA DASHBOARD MOVIL */
+/* Page Operaciones FX*/
+
+.title-widget {
+    color: #424242;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  @media (min-width: 576px) {
+    .title-widget {
+      font-size: 24px;
+    }
+  }
+  
+  .box-contenido {
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) {
+    .box-contenido {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .widget-operaciones-fx .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .box-contenido .container-widget {
+      display:inline-block;
+    }
+  }
+  
+  
+  .box-contenido .title-widget {
+      max-width: none;
+  }
+  
+   @media (min-width: 768px) and (max-width: 800px) {
+    body:not(.sidebar-toggled) .select-fecha {
+          width: 80px;
+      }
+  }
+  
+  @media (max-width: 410px) {
+    body:not(.sidebar-toggled) .btn-cancelar, 
+    body:not(.sidebar-toggled) .btn-solicita {
+              min-width: 170px;
+      }
+      
+  }
+
+
+
+/* Reestructura Dashboard Movil */
 
 .topbar {
     position: relative;
@@ -311,7 +363,12 @@ body.offcanvas-active{
 }	
 
 .row-menu {
+    display: flex;
     height: 45px;
     background-color: #fff;
     padding:0 10px;
+}
+
+.test {
+    color:red;
 }
