@@ -44,7 +44,6 @@
 
 <body id="home" class="context-home context-home-show context-home-show">
     <!-- Body with automatic context classes -->
-    <div class="invex-loader-theme"></div>
     <div id="wrapper">
 
         <!-- Sidebar -->
@@ -120,136 +119,135 @@
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" role="button">
                                 <!-- <i class="fas fa-question-circle"></i> -->
-                                <!-- 1 -->
+                                1
                                 <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/f07bee06-f8af-45d1-91cb-d179c2d9a2b8/original/icon-pregunta.svg"
                                     alt="pregunta">
                             </a>
                         </li>
 
-                        <li id="menuActividad" class="nav-actividad nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle alert-actividad" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle alert-actividad" href="#">
+                                2
                                 <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/10dc6209-fa73-4ff8-b7c1-cc9c02f65825/original/icon-reloj.svg"
                                     alt="reloj">
-                                <div class="down-arrow"></div>
                             </a>
+
+
                             <!-- Dropdown - inicio actividad nuevo -->
                             <div class="section-actividad  dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in">
+                                <div class="down-arrow"></div>
                                 <h6 class="actividad-header">
                                     Actividad
                                 </h6>
-                                <div class="box-actividad">
-                                    <div class="item-actividad tipo-orden-ejecutada">
-                                        <div class="row-order">
-                                            <div class="title-order">
-                                                <span class="icon-orden">
-                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M15.3537 6.52727L8.76367 13.1173L5.17367 9.53727L3.76367 10.9473L8.76367 15.9473L16.7637 7.94727L15.3537 6.52727ZM10.7637 0.947266C5.24367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.24367 20.9473 10.7637 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7637 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#269926"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="nombre-orden">
-                                                    Orden Ejecutada
-                                                </span>
+
+                                <div>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link nav-actividad active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">Todo</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link nav-actividad" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false">Vigente</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link nav-actividad" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact" aria-selected="false">Completadas</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="item-actividad tipo-orden-ejecutada">
+                                                <div class="row-order">
+                                                    <div class="title-order">
+                                                        <span class="icon-orden">
+                                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M15.3537 6.52727L8.76367 13.1173L5.17367 9.53727L3.76367 10.9473L8.76367 15.9473L16.7637 7.94727L15.3537 6.52727ZM10.7637 0.947266C5.24367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.24367 20.9473 10.7637 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7637 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#269926"/>
+                                                                </svg>
+                                                        </span>
+                                                        <span class="nombre-orden">
+                                                            Orden Ejecutada
+                                                        </span>
+                                                    </div>
+                                                    <div class="fecha-orden">
+                                                        03 Ene 22
+                                                    </div>
+                                                </div>
+                                                <div class="row-tipo-divisa">
+                                                    <span class="bold">USDMXN</span> TP Buy USD
+                                                </div>
+                                                <div class="row-porcentaje">
+                                                    0%
+                                                </div>
+                                                <div class="row-limit">
+                                                    Limit @20.45000
+                                                </div>
+                                                <div class="vineta"></div>
                                             </div>
-                                            <div class="fecha-orden">
-                                                03 Ene 22
+                                            <div class="item-actividad tipo-orden-pendiente">
+                                                <div class="row-order">
+                                                    <div class="title-order">
+                                                        <span class="icon-orden">
+                                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M9.76367 13.9473H11.7637V15.9473H9.76367V13.9473ZM9.76367 5.94727H11.7637V11.9473H9.76367V5.94727ZM10.7537 0.947266C5.23367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.23367 20.9473 10.7537 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7537 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#BA8D06"/>
+                                                                </svg>
+                                                        </span>
+                                                        <span class="nombre-orden">
+                                                            Orden Pendiente
+                                                        </span>
+                                                    </div>
+                                                    <div class="fecha-orden">
+                                                        03 Ene 22
+                                                    </div>
+                                                </div>
+                                                <div class="row-tipo-divisa">
+                                                    <span class="bold">USDMXN</span> TP Buy USD
+                                                </div>
+                                                <div class="row-porcentaje">
+                                                    0%
+                                                </div>
+                                                <div class="row-limit">
+                                                    Limit @20.45000
+                                                </div>
+                                                <div class="vineta"></div>
+                                            </div>
+                                            <div class="item-actividad tipo-orden-rechazada">
+                                                <div class="row-order">
+                                                    <div class="title-order">
+                                                        <span class="icon-orden">
+                                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M9.76367 13.9473H11.7637V15.9473H9.76367V13.9473ZM9.76367 5.94727H11.7637V11.9473H9.76367V5.94727ZM10.7537 0.947266C5.23367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.23367 20.9473 10.7537 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7537 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#ED002F"/>
+                                                                </svg>
+                                                        </span>
+                                                        <span class="nombre-orden">
+                                                            Orden Rechazada
+                                                        </span>
+                                                    </div>
+                                                    <div class="fecha-orden">
+                                                        03 Ene 22
+                                                    </div>
+                                                </div>
+                                                <div class="row-tipo-divisa">
+                                                    <span class="bold">USDMXN</span> TP Buy USD
+                                                </div>
+                                                <div class="row-porcentaje">
+                                                    0%
+                                                </div>
+                                                <div class="row-limit">
+                                                    Limit @20.45000
+                                                </div>
+                                                <div class="vineta"></div>
                                             </div>
                                         </div>
-                                        <div class="row-tipo-divisa">
-                                            <span class="bold">USDMXN</span> TP Buy USD
+                                        <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+                                            <p class="m-0">Sed feugiat convallis massa, eu ultrices metus gravida ut. Quisque nec leo at massa facilisis aliquam rhoncus sit amet turpis. In a sem ac neque malesuada vulputate quis sit amet massa.</p>
                                         </div>
-                                        <div class="row-porcentaje">
-                                            0%
+                                        <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+                                            <p class="m-0">Cras ut tortor in ante consectetur tempus. Cras viverra neque dui, nec cursus augue maximus ut. Curabitur dictum elit nulla, quis molestie quam faucibus in. Donec vitae ipsum facilisis, molestie leo nec</p>
                                         </div>
-                                        <div class="row-limit">
-                                            Limit @20.45000
-                                        </div>
-                                        <div class="vineta"></div>
                                     </div>
-                                    <div class="item-actividad tipo-orden-pendiente">
-                                        <div class="row-order">
-                                            <div class="title-order">
-                                                <span class="icon-orden">
-                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9.76367 13.9473H11.7637V15.9473H9.76367V13.9473ZM9.76367 5.94727H11.7637V11.9473H9.76367V5.94727ZM10.7537 0.947266C5.23367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.23367 20.9473 10.7537 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7537 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#BA8D06"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="nombre-orden">
-                                                    Orden Pendiente
-                                                </span>
-                                            </div>
-                                            <div class="fecha-orden">
-                                                03 Ene 22
-                                            </div>
-                                        </div>
-                                        <div class="row-tipo-divisa">
-                                            <span class="bold">USDMXN</span> TP Buy USD
-                                        </div>
-                                        <div class="row-porcentaje">
-                                            0%
-                                        </div>
-                                        <div class="row-limit">
-                                            Limit @20.45000
-                                        </div>
-                                        <div class="vineta"></div>
-                                    </div>
-                                    <div class="item-actividad tipo-orden-rechazada">
-                                        <div class="row-order">
-                                            <div class="title-order">
-                                                <span class="icon-orden">
-                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9.76367 13.9473H11.7637V15.9473H9.76367V13.9473ZM9.76367 5.94727H11.7637V11.9473H9.76367V5.94727ZM10.7537 0.947266C5.23367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.23367 20.9473 10.7537 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7537 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#ED002F"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="nombre-orden">
-                                                    Orden Rechazada
-                                                </span>
-                                            </div>
-                                            <div class="fecha-orden">
-                                                03 Ene 22
-                                            </div>
-                                        </div>
-                                        <div class="row-tipo-divisa">
-                                            <span class="bold">USDMXN</span> TP Buy USD
-                                        </div>
-                                        <div class="row-porcentaje">
-                                            0%
-                                        </div>
-                                        <div class="row-limit">
-                                            Limit @20.45000
-                                        </div>
-                                        <div class="vineta"></div>
-                                    </div>
-                                    <div class="item-actividad tipo-orden-pendiente hide">
-                                        <div class="row-order">
-                                            <div class="title-order">
-                                                <span class="icon-orden">
-                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9.76367 13.9473H11.7637V15.9473H9.76367V13.9473ZM9.76367 5.94727H11.7637V11.9473H9.76367V5.94727ZM10.7537 0.947266C5.23367 0.947266 0.763672 5.42727 0.763672 10.9473C0.763672 16.4673 5.23367 20.9473 10.7537 20.9473C16.2837 20.9473 20.7637 16.4673 20.7637 10.9473C20.7637 5.42727 16.2837 0.947266 10.7537 0.947266ZM10.7637 18.9473C6.34367 18.9473 2.76367 15.3673 2.76367 10.9473C2.76367 6.52727 6.34367 2.94727 10.7637 2.94727C15.1837 2.94727 18.7637 6.52727 18.7637 10.9473C18.7637 15.3673 15.1837 18.9473 10.7637 18.9473Z" fill="#BA8D06"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="nombre-orden">
-                                                    Orden Pendiente
-                                                </span>
-                                            </div>
-                                            <div class="fecha-orden">
-                                                03 Ene 22
-                                            </div>
-                                        </div>
-                                        <div class="row-tipo-divisa">
-                                            <span class="bold">USDMXN</span> TP Buy USD
-                                        </div>
-                                        <div class="row-porcentaje">
-                                            0%
-                                        </div>
-                                        <div class="row-limit">
-                                            Limit @20.45000
-                                        </div>
-                                        <div class="vineta"></div>
-                                    </div>
-                                    <a class="show-more btn-ver-mas text-center" href="#">Ver más</a>
                                 </div>
                             </div>
                             <!-- Dropdown - fin actividad nuevo -->
+
+
                         </li>
 
                         <!-- Nav Item - Alerts -->
@@ -300,29 +298,7 @@
                                         Spending Alert: We've noticed unusually high spending for your account.
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center hide" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center hide" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a>
-                                <a class="show-more dropdown-item text-center small text-gray-500" href="#">a Show All Alerts</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
 
@@ -357,33 +333,11 @@
                             </div>
                         </li>
 
-                         <!-- Nav Item - User Information -->
-                         <li id="menuCerrar" class="nav-cerrarsesion nav-cerrar  nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button">
                                 <img src="https://d2ra1qv4p9we6t.cloudfront.net/uploads/79488f53-6515-4b3f-9331-1ef00f766159/original/icon-salir.svg"
                                     alt="salir">
-                                <div class="down-arrow"></div>
                             </a>
-                            <!-- Dropdown - User Information -->
-
-                            <div class="section-cerrar-sesion  dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in">
-                                <h6 class="title-header-nav">
-                                    Cerrar sesión
-                                </h6>
-                                <div class="box-sesion">
-                                    <p>¿Estas seguro que quieres cerrar sesiôn?</p>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="row-btn-sesion">
-                                        <button role="button" class="btn btn-outline-primary px-4">
-                                            Cancelar
-                                        </button>
-                                        <button role="button" class="btn btn-solicita px-4" id="LogoutButton">
-                                            Aceptar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                         </li>
 
                     </ul>
@@ -504,7 +458,7 @@
 
             // Toggle the side navigation
             $("#sidebarToggle, #sidebarToggleTop").on('click', function (e) {
-                alert('togge');
+                akert('togge');
                 $("body").toggleClass("sidebar-toggled");
                 $(".sidebar").toggleClass("toggled");
                 if ($(".sidebar").hasClass("toggled")) {
@@ -515,14 +469,8 @@
             /* $( ".alert-actividad" ).click(function( e ) {
                  $(this).siblings().addClass('mostrar');
             }); */
-            
-            $( ".show-more" ).click(function( event ) {
-                $(this).parents().find(".hide").removeClass('hide');
-                $(this).remove();
-                return false;
-            }); 
 
-           /*  $(".alert-actividad").click(function () {
+            $(".alert-actividad").click(function () {
                 if ($(this).siblings().hasClass("mostrar")) {
                     $(this).siblings().removeClass("mostrar");
                     $('body').removeClass("mostrar");
@@ -534,7 +482,7 @@
                     console.log('b');
                     $('body').addClass("mostrar");
                 }
-            }); */
+            });
 
 
         })(jQuery); // End of use strict
@@ -544,7 +492,6 @@
     <script id="widget-definition-manager" url="https://invex.modyo.be/invex"
         src="/assets/site/libs/manager-a992dbda1ddf68dce4384c9e4c7ba9a9f9842c308de2c523d3962ce06aeea8b2.js"
         ie-polyfill="/assets/site/libs/ie_polyfill-830499007308c7fe3729d598ead5ad1bf305e3e1ebefb940009f871120ac53f6.js?features=Promise,fetch&flags=gated&callback=window.cb"></script>
-    <script src="js/sb-admin-2.js"></script>
 </body>
 
 

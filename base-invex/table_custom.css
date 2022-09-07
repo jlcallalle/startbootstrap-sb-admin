@@ -1,0 +1,126 @@
+
+/* Widget Historial de Operaciones  */
+/* Style CSS Vue Good Table  */
+
+.vgt-table {
+	border: 2px solid green;
+}
+.vgt-table td span {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+}
+.vgt-table .th-custom {
+	background: #a41d36 !important;
+	border-color: #a41d36 !important;
+	color: white !important;
+	font-size: 14px;
+	padding: 0;
+}
+.vgt-table .th-custom span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 10.5px;
+	padding-left: 10.5px;
+	padding-right: 21px;
+	padding-top: 10.5px;
+	height: 48px;
+	font-weight: normal;
+}
+
+.vgt-table th.sortable button:after {
+	  display:none;
+    border-bottom: 5px solid #d28e9b!important;
+}
+.vgt-table th.sortable button:before {
+	  display:none;
+    border-top: 5px solid #d28e9b!important;
+}
+
+/* Paginacion */
+
+.vgt-wrap__footer .footer__row-count__label {
+    font-size: 14px;
+    color: #424242;
+    margin-bottom: 0;
+}
+
+.vgt-wrap__footer .footer__row-count__select { 
+    font-size: 14px;
+    color: #424242;
+    font-weight: 600;
+}
+
+.vgt-wrap__footer .footer__navigation__info, .vgt-wrap__footer .footer__navigation__page-info {
+    font-size: 14px;
+    color: #424242;
+}
+
+.vgt-wrap__footer .footer__navigation__page-btn span {
+    font-size: 14px;
+    color: #424242;
+}
+
+.vgt-wrap__footer .footer__navigation__page-btn .chevron.right::after {
+    border-left: 6px solid #A41D36;
+    font-size: 14px;
+}
+
+.vgt-wrap__footer .footer__navigation__page-btn .chevron.left::after {
+    border-right: 6px solid #A41D36;
+     font-size: 14px;
+}
+
+/* Nuevo */
+
+.footer__navigation__page-info div:after {
+  content: 'Entradas';
+}
+.footer__navigation__page-info div:before {
+  content: 'Mostrando';
+}
+
+
+.vgt-wrap__footer .footer__row-count {
+   display: block;
+   position: absolute!important;
+   top: -80px;
+   right: 320px;
+}
+
+@media (max-width: 992px) {
+  .vgt-wrap__footer .footer__row-count {
+    display:none;
+  }
+}
+
+.vgt-wrap__footer .footer__navigation__page-info {
+  position: absolute!important;
+  left: 0!important;
+}
+
+.vgt-wrap__footer .footer__row-count__label {
+  font-size: 0!important;
+}
+
+.vgt-wrap__footer .footer__row-count__label:before {
+  content: 'Mostrar:';
+  font-size: 14px!important;
+}
+
+.vgt-wrap__footer .footer__row-count__select {
+  font-size: 14px!important;
+}
+
+@media (max-width: 992px) {
+  .vgt-wrap__footer .footer__navigation__info, 
+  .vgt-wrap__footer .footer__navigation__page-info {
+    display: none!important;
+  }
+}
+
+.vgt-table .th-custom.tipo-cambio span {
+  width: 140px;
+}

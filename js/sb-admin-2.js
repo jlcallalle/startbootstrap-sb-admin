@@ -53,6 +53,21 @@
     e.preventDefault();
   });
 
+ /*  $("#alertsDropdown").on('click', function(e) {
+    alert('test');
+  }); */
+
+  $('.dropdown-toggle').dropdown();
+
+
+  $('#menuActividad, #menuCerrar').on('show.bs.dropdown', function () {
+		$('.invex-loader-theme').addClass('show');
+	});
+	
+	$('#menuActividad, #menuCerrar').on('hidden.bs.dropdown', function(e) {
+		$('.invex-loader-theme').removeClass('show');
+  });
+
 })(jQuery); // End of use strict
 
 // MENU NAV 
@@ -97,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function(){
         });
   });
 
-  document.querySelector('.screen-darken').addEventListener('click', function(event){
+  /* document.querySelector('.screen-darken').addEventListener('click', function(event){
       close_offcanvas();
-  });
+  }); */
   
 }); 
 // DOMContentLoaded  end
