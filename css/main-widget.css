@@ -2736,3 +2736,83 @@ body {
 	 align-items: center;
 	 justify-content: space-around;
 } */
+/* Preguntas Frecuentes */
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#wrapper #content-wrapper {
+  background-color: #f8f9fc;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#home.page-preguntas {
+  background-repeat: no-repeat;
+  background-position: 243px -100px;
+}
+
+@media (min-width: 1200px) {
+  .box-contenido .container {
+    max-width: 1140px;
+  }
+}
+.title-page {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  color: #424242;
+}
+
+.title-page-sub {
+  font-weight: 600;
+  font-size: 24px;
+  color: #424242;
+}
+
+.page-pregunta .card .card-header[data-toggle=collapse] {
+  background-color: white;
+  padding: 0.75rem 2rem 0.75rem 1.25rem;
+}
+
+.page-pregunta .accordion > .card:not(:last-of-type) {
+  border-radius: 0;
+  margin: 0;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.card .card-header[data-toggle=collapse]::after {
+  display: none;
+}
+
+.card .card-header[data-toggle=collapse].collapsed::after {
+  display: none;
+}
+
+.card .card-header[aria-expanded=true] .arrow {
+  transform: rotate(45deg);
+}
+
+.arrow {
+  border: solid #424242;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  opacity: 0.7;
+}
+
+.title-accordion {
+  font-weight: 400;
+  font-size: 16px;
+  color: #424242;
+}
