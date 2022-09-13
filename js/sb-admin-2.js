@@ -60,6 +60,15 @@
   $('.dropdown-toggle').dropdown();
 
 
+  $('#menuAlerta').on('show.bs.dropdown', function () {
+		$('.invex-loader-theme').addClass('show');
+	});
+
+  $('#menuAlerta').on('hidden.bs.dropdown', function(e) {
+		$('.invex-loader-theme').removeClass('show');
+  });
+
+  
   $('#menuActividad, #menuCerrar').on('show.bs.dropdown', function () {
 		$('.invex-loader-theme').addClass('show');
 	});
@@ -67,6 +76,15 @@
 	$('#menuActividad, #menuCerrar').on('hidden.bs.dropdown', function(e) {
 		$('.invex-loader-theme').removeClass('show');
   });
+
+  $('#menuSoporte').on('show.bs.dropdown', function () {
+		$('.invex-loader-theme').addClass('show');
+	});
+	
+	$('#menuSoporte').on('hidden.bs.dropdown', function(e) {
+		$('.invex-loader-theme').removeClass('show');
+  });
+
 
 })(jQuery); // End of use strict
 

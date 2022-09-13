@@ -2609,3 +2609,167 @@ color: #ED002F!important;
   color: #424242;
 }
 
+/* Alerta */
+
+.section-alerta {
+  &.dropdown-list {
+    padding: 16px;
+    @media (min-width: 992px) {
+      width: 25rem !important;
+    }
+    .dropdown-item {
+      white-space: nowrap;
+    }
+  }
+}
+
+.section-alerta {
+    // background-image: url(../img/alertas.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    .box-alerta {
+      margin-top: 12px;
+      .icon-engraje {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+      .item-alerta {
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+}
+
+.title-alert {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242;
+}
+
+.content-alert {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  color: #424242;
+}
+
+.date-alert {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  color: #424242;
+}
+
+/* Vista Soporte */
+
+.nav-soporte {
+  a[aria-expanded="true"] {
+    .down-arrow {
+      display: block;
+    }
+  }
+}
+
+.section-soporte {
+  &.dropdown-list {
+    @media (min-width: 992px) {
+      width: 25rem !important;
+    }
+    padding: 16px;
+    .dropdown-item {
+      white-space: nowrap;
+    }
+  }
+}
+
+.section-soporte {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+    .box-soporte {
+      margin-top: 12px;
+      span {
+        margin-left: 10px;
+      }
+    }
+}
+
+.link-soporte {
+    color:#A30234;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    &:hover {
+      color:#424242;
+      text-decoration: none;
+    }
+}
+
+/* Modal Contacto */
+.modal-contacto {
+    &.modal-dialog {
+        max-width: 710px;
+    }
+    .modal-body {
+      padding: 1rem 4rem 0.5rem 4rem;
+    }
+  .modal-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .modal-footer {
+    border-top: 0;
+    padding: 0 0 2rem 0;
+  }
+}
+
+.dato.contacto {
+  margin-top: 40px;
+  width: 305px;
+  margin: 0 auto 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row-contacto {
+  margin-bottom: 12px;
+}
+
+
+/* Widget Alertas */
+
+/* Theme Invex */
+$brand-invex: #A41D36;
+$grey-dark:#424242;
+$grey-2:#8A8A8A;
+
+#home {
+  background-image: url(../img/page-alertas.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+}
+
+#wrapper #content-wrapper {
+  background-color: transparent;
+}
+
+.widget-widget-alertas-fx {
+  .container-widget {
+    margin-top: 10px;
+  }
+}
+
+.box-alertas {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 28px 20px 25px 20px;
+  width: 100%;
+}

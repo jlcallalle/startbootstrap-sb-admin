@@ -1,0 +1,39 @@
+{% html5 %} <!-- HTML header with browser directives -->
+<head>
+  {% snippet 'shared/general/head' %}
+</head>
+{% body %} <!-- Body with automatic context classes -->
+<div class="invex-loader-theme"></div>
+<div id="wrapper">
+				{% snippet "sidebar_html" %}
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+               
+                {%if request.url contains 'preguntas-frecuentes'%}
+                  {% snippet "navbar_html" %}
+                {% else  %}
+                 {% snippet "navbar_servicio_html" %}
+                {% endif  %}
+
+                <div class="container-fluid box-contenido">
+										<!--  <h1 class="mb-4 title-widget">Operaciones FX</h1> -->
+									  <span class="screen-darken"></span>
+										{{ content_for_layout }}
+                </div>
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+</div>
+<script>
+	{% snippet "main_js" %}
+</script>
+{% endbody %}
+{% endhtml5 %}
