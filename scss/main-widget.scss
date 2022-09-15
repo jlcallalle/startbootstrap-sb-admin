@@ -2718,7 +2718,10 @@ color: #ED002F!important;
         max-width: 710px;
     }
     .modal-body {
-      padding: 1rem 4rem 0.5rem 4rem;
+      padding: 1rem 2rem 0.5rem 2rem;
+      @media (min-width: 992px) {
+        padding: 1rem 4rem 0.5rem 4rem;
+      }
     }
   .modal-header {
     border-bottom: 0;
@@ -2741,6 +2744,11 @@ color: #ED002F!important;
 
 .row-contacto {
   margin-bottom: 12px;
+  span {
+    color: #424242;
+    font-weight: bold;
+    margin-left: 35px;
+  }
 }
 
 
@@ -2752,9 +2760,10 @@ $grey-dark:#424242;
 $grey-2:#8A8A8A;
 
 #home {
-  background-image: url(../img/page-alertas.jpg);
+  // background-image: url(../img/page-alertas.jpg);
   background-repeat: no-repeat;
   background-position: 0 0px;
+  background-position: 18px -17px;
 }
 
 #wrapper #content-wrapper {
@@ -2772,4 +2781,244 @@ $grey-2:#8A8A8A;
   border-radius: 16px;
   padding: 28px 20px 25px 20px;
   width: 100%;
+  background-color: white;
+}
+
+.btn-alerta {
+  padding-right:2.5rem;
+  padding-left:2.5rem; 
+  @media (min-width: 768px) {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem; 
+  }
+}
+.table-alerta  {
+  thead th {
+    color: white;
+    background-color: #A41D36;
+    text-align: center;
+  }
+  tbody td {
+    text-align: center;
+  }
+}
+
+/* Medio repecion */
+
+.medio-recepcion {
+	width: 120px;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.iconSelect {
+	width: 100%;
+}
+
+.iconSelect.custom-control {
+	padding-left: 0;
+}
+
+.iconSelect .custom-control-label {
+	cursor: pointer;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.iconSelect .custom-control-label svg {
+	fill: #CCCCCC;
+}
+
+.iconSelect .custom-control-label::before,
+.iconSelect .custom-control-label::after {
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: -1;
+}
+
+.iconSelect .custom-control-input:checked~.custom-control-label svg {
+	fill: #424242;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.medio-accion {
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+/* switch  */
+.box-switch {
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #269926;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #269926;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(19px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+}
+
+
+/* Estilos Modal Crear Alerta */
+
+.modal-wrapper {
+  height: 100%;
+  padding: 20px;
+  .modal-dialog {
+    max-width: 800px;
+    margin: auto;
+    transform: translate3d(0%, 0, 0);
+    transition: all 0.3s linear, right 0.3s ease-out;
+  }
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 1rem 1rem 0 1rem;
+}
+.modal-title {
+    color: $grey-dark;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin:1.5rem 0 2rem 0;
+}
+.modal-footer {
+    border-top: none;
+    padding-bottom: 2.5rem;
+}
+.modal-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    transition: all .3s ease;
+}
+button.close {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 30px;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.modal-alerta {
+  &.modal-dialog  {
+    max-width: 800px;
+    margin: auto;
+    transform: translate3d(0%, 0, 0);
+    transition: all 0.3s linear, right 0.3s ease-out
+  }
+  .modal-header {
+      border-bottom: none;
+      padding: 1rem 1rem 0 1rem;
+  }
+  .modal-footer {
+    border-top: 0;
+    padding: 0 0 2rem 0;
+  }
+}
+
+
+
+
+// Medios Clase:  medio-row
+.box-form-alerta {
+  padding: 10px 20px;
+}
+
+
+.medio-recepcion.medio-row {
+  display: block;
+  margin: 0;
+  width: auto;
+}
+
+.medio-row .custom-control {
+  margin-bottom: 8px;
+}
+
+.medio-row .custom-control-input {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+}
+
+.medio-row .iconSelect .custom-control-label {
+  text-align: left;
+  margin-left: 32px;
+}
+
+.medio-row .iconSelect .custom-control-label svg {
+  width: 30px;
 }

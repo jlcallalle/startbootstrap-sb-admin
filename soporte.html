@@ -496,7 +496,7 @@
 
     </div>
     <!-- Modal -->
-  <div class="modal fade" id="modalSoporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <!--  <div class="modal fade" id="modalSoporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-contacto modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content text-center">
         <div class="modal-header">
@@ -507,7 +507,7 @@
         <div class="modal-body">
             <h5 class="mb-4"><strong> Contacto </strong></h5>
             <div class="info-contacto">
-                <p class="text-left">En caso de cualquier pregunta, comuníquese con el Equipo de Soporte Técnico</p>
+                <p class="text-left">En caso de cualquier pregunta, comuníquese con el Equipo de Soporte Técnico:</p>
                 <div class="dato contacto">
                     <div class="row-contacto">
                         <a href="">
@@ -566,6 +566,175 @@
                     </div>
                 </div>
             </div>
+                
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-primary  px-4" data-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+   <div class="modal fade show" id="modalSoporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-alerta modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h5 class="mb-4"><strong> Crear Alerta </strong></h5>
+            <div class="box-form-alerta">
+                <form action="">
+                    
+                    <div class="form-group row">
+                        
+                        <label for="staticEmail" class="col-4 col-form-label text-left">Alerta Divisa </label>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>USD/MXN</option>
+                                    <option>USD/MXN</option>
+                                    <option>USD/MXN</option>
+                                    <option>USD/MXN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-4 col-form-label text-left">Condición </label>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Subida / Caida</option>
+                                    <option>Subida / Caida</option>
+                                    <option>Subida / Caida</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-4 text-left">
+                            <label for="staticEmail" class="col-form-label ">Frecuencia </label>
+                            <div class="radio-frecuencia">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                    <label class="form-check-label" for="exampleRadios1">
+                                     Una vez
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                                    <label class="form-check-label" for="exampleRadios2">
+                                     Siempre
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-4">
+                            <div class="form-group">
+                                <p>Medios de repeción:</p>
+                                 
+                                <div class="medio-recepcion medio-row">
+                                    <div class="custom-control custom-checkbox iconSelect">
+                                      <input
+                                        id="checkLaptop"
+                                        type="checkbox"
+                                        name="checkRecepcion"
+                                        value="1"
+                                        class="custom-control-input">
+                                      <label
+                                        class="custom-control-label"
+                                        for="checkLaptop">
+                                        <svg
+                                          width="30"
+                                          height="20"
+                                          viewBox="0 0 30 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M24.4896 17.6471V16.4706C25.7838 16.4706 26.8308 15.4118 26.8308 14.1176L26.8426 2.35294C26.8426 1.05882 25.7838 0 24.4896 0H5.66612C4.372 0 3.31318 1.05882 3.31318 2.35294V14.1176C3.31318 15.4118 4.372 16.4706 5.66612 16.4706V17.6471H0.960236V20H29.1955V17.6471H24.4896ZM5.66612 2.35294H24.4896V14.1176H5.66612V2.35294Z" />
+                                        </svg>
+                                        <span>Notificacion via Web</span>
+                                      </label>
+                                    </div>
+          
+                                    <div class="custom-control custom-checkbox iconSelect">
+                                      <input
+                                        id="checkCellphone"
+                                        type="checkbox"
+                                        name="checkRecepcion"
+                                        value="2"
+                                        class="custom-control-input"
+                                        checked>
+                                      <label
+                                        class="custom-control-label"
+                                        for="checkCellphone">
+                                        <svg
+                                          width="16"
+                                          height="24"
+                                          viewBox="0 0 16 24"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M13.2864 0.0109091L2.37735 0C1.17735 0 0.195534 0.981818 0.195534 2.18182V21.8182C0.195534 23.0182 1.17735 24 2.37735 24H13.2864C14.4864 24 15.4683 23.0182 15.4683 21.8182V2.18182C15.4683 0.981818 14.4864 0.0109091 13.2864 0.0109091ZM13.2864 19.6364H2.37735V4.36364H13.2864V19.6364Z" />
+                                        </svg>
+                                        <span>Notificacion via SMS</span>
+                                      </label>
+                                    </div>
+          
+                                    <div class="custom-control custom-checkbox iconSelect">
+                                      <input
+                                        id="checkEmail"
+                                        type="checkbox"
+                                        name="checkRecepcion"
+                                        value="3"
+                                        class="custom-control-input">
+                                      <label
+                                        class="custom-control-label"
+                                        for="checkEmail">
+                                        <svg
+                                          width="26"
+                                          height="20"
+                                          viewBox="0 0 26 20"
+                                          fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                            d="M22.9683 0H2.96826C1.59326 0 0.480762 1.125 0.480762 2.5L0.468262 17.5C0.468262 18.875 1.59326 20 2.96826 20H22.9683C24.3433 20 25.4683 18.875 25.4683 17.5V2.5C25.4683 1.125 24.3433 0 22.9683 0ZM22.9683 17.5H2.96826V5L12.9683 11.25L22.9683 5V17.5ZM12.9683 8.75L2.96826 2.5H22.9683L12.9683 8.75Z" />
+                                        </svg>
+                                        <span>Notificacion via correo electrónico</span>
+                                      </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <p>Estatus:</p>
+                                <div class="box-switch">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                   </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                
+            </div>
+            
                 
         </div>
         <div class="modal-footer d-flex justify-content-center">

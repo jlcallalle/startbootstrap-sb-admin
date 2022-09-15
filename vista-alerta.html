@@ -215,9 +215,123 @@
                                 <div class="container container-widget">
                                     <div class="row">
                                         <div class="box-alertas">
-                                            <p>contenido</p>
+                                            <div class="row-btn">
+                                                <a href="" class="btn btn-primary btn-alerta">Crear Alerta</a>
+                                            </div>
+                                            <div class="row-tabla mt-4">
+                                                <table class="table table-alerta">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">Divisa</th>
+                                                        <th scope="col">Tipo</th>
+                                                        <th scope="col">Condición</th>
+                                                        <th scope="col">Frecuencia</th>
+                                                        <th scope="col">Medio de repeción</th>
+                                                        <th scope="col">Estatus</th>
+                                                        <th scope="col">Cambios</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>USD/MXN</td>
+                                                        <td>Volumen</td>
+                                                        <td>Supera 20.38</td>
+                                                        <td>Una vez</td>
+                                                        <td>
+                                                            <div class="medio-recepcion">
+                                                                <a href="" class="icon-recepcion">
+                                                                    <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M24.4896 17.6471V16.4706C25.7838 16.4706 26.8308 15.4118 26.8308 14.1176L26.8426 2.35294C26.8426 1.05882 25.7838 0 24.4896 0H5.66612C4.372 0 3.31318 1.05882 3.31318 2.35294V14.1176C3.31318 15.4118 4.372 16.4706 5.66612 16.4706V17.6471H0.960236V20H29.1955V17.6471H24.4896ZM5.66612 2.35294H24.4896V14.1176H5.66612V2.35294Z" fill="#CCCCCC"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="icon-recepcion">
+                                                                    <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M13.2864 0.0109091L2.37735 0C1.17735 0 0.195534 0.981818 0.195534 2.18182V21.8182C0.195534 23.0182 1.17735 24 2.37735 24H13.2864C14.4864 24 15.4683 23.0182 15.4683 21.8182V2.18182C15.4683 0.981818 14.4864 0.0109091 13.2864 0.0109091ZM13.2864 19.6364H2.37735V4.36364H13.2864V19.6364Z" fill="#424242"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="icon-recepcion">
+                                                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M22.9683 0H2.96826C1.59326 0 0.480762 1.125 0.480762 2.5L0.468262 17.5C0.468262 18.875 1.59326 20 2.96826 20H22.9683C24.3433 20 25.4683 18.875 25.4683 17.5V2.5C25.4683 1.125 24.3433 0 22.9683 0ZM22.9683 17.5H2.96826V5L12.9683 11.25L22.9683 5V17.5ZM12.9683 8.75L2.96826 2.5H22.9683L12.9683 8.75Z" fill="#CCCCCC"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="box-switch">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="slider round"></span>
+                                                               </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="medio-accion">
+                                                                <a href="" class="icon-accion">
+                                                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.642853 15.2513V19.0013H4.39285L15.4529 7.94128L11.7029 4.19128L0.642853 15.2513ZM18.3529 5.04128C18.7429 4.65128 18.7429 4.02128 18.3529 3.63128L16.0129 1.29128C15.6229 0.901279 14.9929 0.901279 14.6029 1.29128L12.7729 3.12128L16.5229 6.87128L18.3529 5.04128Z" fill="#666666"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="icon-accion">
+                                                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M1.64285 16.9988C1.64285 18.0988 2.54285 18.9988 3.64285 18.9988H11.6429C12.7429 18.9988 13.6429 18.0988 13.6429 16.9988V4.99878H1.64285V16.9988ZM14.6429 1.99878H11.1429L10.1429 0.998779H5.14285L4.14285 1.99878H0.642853V3.99878H14.6429V1.99878Z" fill="#666666"/>
+                                                                   </svg>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>USD/MXN</td>
+                                                        <td>Precio</td>
+                                                        <td>Supera 1,200</td>
+                                                        <td>Siempre</td>
+                                                        <td>
+                                                            <div class="medio-recepcion">
+                                                                <a href="" class="icon-recepcion">
+                                                                    <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M24.4896 17.6471V16.4706C25.7838 16.4706 26.8308 15.4118 26.8308 14.1176L26.8426 2.35294C26.8426 1.05882 25.7838 0 24.4896 0H5.66612C4.372 0 3.31318 1.05882 3.31318 2.35294V14.1176C3.31318 15.4118 4.372 16.4706 5.66612 16.4706V17.6471H0.960236V20H29.1955V17.6471H24.4896ZM5.66612 2.35294H24.4896V14.1176H5.66612V2.35294Z" fill="#424242"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="icon-recepcion">
+                                                                    <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M13.2864 0.0109091L2.37735 0C1.17735 0 0.195534 0.981818 0.195534 2.18182V21.8182C0.195534 23.0182 1.17735 24 2.37735 24H13.2864C14.4864 24 15.4683 23.0182 15.4683 21.8182V2.18182C15.4683 0.981818 14.4864 0.0109091 13.2864 0.0109091ZM13.2864 19.6364H2.37735V4.36364H13.2864V19.6364Z" fill="#424242"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="icon-recepcion">
+                                                                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M22.9683 0H2.96826C1.59326 0 0.480762 1.125 0.480762 2.5L0.468262 17.5C0.468262 18.875 1.59326 20 2.96826 20H22.9683C24.3433 20 25.4683 18.875 25.4683 17.5V2.5C25.4683 1.125 24.3433 0 22.9683 0ZM22.9683 17.5H2.96826V5L12.9683 11.25L22.9683 5V17.5ZM12.9683 8.75L2.96826 2.5H22.9683L12.9683 8.75Z" fill="#CCCCCC"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="box-switch">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="slider round"></span>
+                                                               </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="medio-accion">
+                                                                <a href="" class="icon-accion">
+                                                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0.642853 15.2513V19.0013H4.39285L15.4529 7.94128L11.7029 4.19128L0.642853 15.2513ZM18.3529 5.04128C18.7429 4.65128 18.7429 4.02128 18.3529 3.63128L16.0129 1.29128C15.6229 0.901279 14.9929 0.901279 14.6029 1.29128L12.7729 3.12128L16.5229 6.87128L18.3529 5.04128Z" fill="#666666"/>
+                                                                    </svg>
+                                                                </a>
+                                                                <a href="" class="icon-accion">
+                                                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M1.64285 16.9988C1.64285 18.0988 2.54285 18.9988 3.64285 18.9988H11.6429C12.7429 18.9988 13.6429 18.0988 13.6429 16.9988V4.99878H1.64285V16.9988ZM14.6429 1.99878H11.1429L10.1429 0.998779H5.14285L4.14285 1.99878H0.642853V3.99878H14.6429V1.99878Z" fill="#666666"/>
+                                                                   </svg>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                            </div>
                         </div>

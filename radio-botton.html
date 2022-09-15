@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .medio-recepcion {
+            width: 120px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+
+        .iconSelect {
+            width: 100%;
+        }
+
+        .iconSelect.custom-control {
+            padding-left: 0;
+        }
+
+        .iconSelect-icon {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .iconSelect .custom-control-label {
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            border-radius: 0.2rem;
+            /* padding: 1rem 1rem 2.5rem; */
+            font-size: 1.4rem;
+            transition: background-color 0.1s linear, color 0.1s linear;
+        }
+
+        .iconSelect .custom-control-label svg {
+            fill: #CCCCCC;
+        }
+
+        .iconSelect .custom-control-label::before,
+        .iconSelect .custom-control-label::after {
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 1rem;
+            margin: auto;
+            z-index: -1;
+        }
+
+        /*  .iconSelect .custom-control-input:checked~.custom-control-label {
+            background: #FF6300;
+            color: #fff;
+        } */
+        .iconSelect .custom-control-input:checked~.custom-control-label svg {
+            fill: #424242;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="medio-recepcion d-flex">
+        <div class="custom-control custom-checkbox iconSelect">
+            <input type="checkbox" id="customCheck1" name="customCheck" value="1" class="custom-control-input">
+            <label class="custom-control-label" for="customCheck1">
+                <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.4896 17.6471V16.4706C25.7838 16.4706 26.8308 15.4118 26.8308 14.1176L26.8426 2.35294C26.8426 1.05882 25.7838 0 24.4896 0H5.66612C4.372 0 3.31318 1.05882 3.31318 2.35294V14.1176C3.31318 15.4118 4.372 16.4706 5.66612 16.4706V17.6471H0.960236V20H29.1955V17.6471H24.4896ZM5.66612 2.35294H24.4896V14.1176H5.66612V2.35294Z" />
+                </svg>
+            </label>
+        </div>
+
+        <div class="custom-control custom-checkbox iconSelect">
+            <input type="checkbox" id="customCheck2" name="customCheck" value="2" class="custom-control-input" checked>
+            <label class="custom-control-label" for="customCheck2">
+                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.2864 0.0109091L2.37735 0C1.17735 0 0.195534 0.981818 0.195534 2.18182V21.8182C0.195534 23.0182 1.17735 24 2.37735 24H13.2864C14.4864 24 15.4683 23.0182 15.4683 21.8182V2.18182C15.4683 0.981818 14.4864 0.0109091 13.2864 0.0109091ZM13.2864 19.6364H2.37735V4.36364H13.2864V19.6364Z" />
+                </svg>
+            </label>
+        </div>
+
+        <div class="custom-control custom-checkbox iconSelect">
+            <input type="checkbox" id="customCheck3" name="customCheck" value="2" class="custom-control-input" >
+            <label class="custom-control-label" for="customCheck3">
+                <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.2864 0.0109091L2.37735 0C1.17735 0 0.195534 0.981818 0.195534 2.18182V21.8182C0.195534 23.0182 1.17735 24 2.37735 24H13.2864C14.4864 24 15.4683 23.0182 15.4683 21.8182V2.18182C15.4683 0.981818 14.4864 0.0109091 13.2864 0.0109091ZM13.2864 19.6364H2.37735V4.36364H13.2864V19.6364Z" />
+                </svg>
+            </label>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="medio-recepcion">
+        <a href="" class="icon-recepcion">
+            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M24.4896 17.6471V16.4706C25.7838 16.4706 26.8308 15.4118 26.8308 14.1176L26.8426 2.35294C26.8426 1.05882 25.7838 0 24.4896 0H5.66612C4.372 0 3.31318 1.05882 3.31318 2.35294V14.1176C3.31318 15.4118 4.372 16.4706 5.66612 16.4706V17.6471H0.960236V20H29.1955V17.6471H24.4896ZM5.66612 2.35294H24.4896V14.1176H5.66612V2.35294Z"
+                    fill="#CCCCCC" />
+            </svg>
+        </a>
+        <a href="" class="icon-recepcion">
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.2864 0.0109091L2.37735 0C1.17735 0 0.195534 0.981818 0.195534 2.18182V21.8182C0.195534 23.0182 1.17735 24 2.37735 24H13.2864C14.4864 24 15.4683 23.0182 15.4683 21.8182V2.18182C15.4683 0.981818 14.4864 0.0109091 13.2864 0.0109091ZM13.2864 19.6364H2.37735V4.36364H13.2864V19.6364Z"
+                    fill="#424242" />
+            </svg>
+        </a>
+        <a href="" class="icon-recepcion">
+            <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22.9683 0H2.96826C1.59326 0 0.480762 1.125 0.480762 2.5L0.468262 17.5C0.468262 18.875 1.59326 20 2.96826 20H22.9683C24.3433 20 25.4683 18.875 25.4683 17.5V2.5C25.4683 1.125 24.3433 0 22.9683 0ZM22.9683 17.5H2.96826V5L12.9683 11.25L22.9683 5V17.5ZM12.9683 8.75L2.96826 2.5H22.9683L12.9683 8.75Z"
+                    fill="#CCCCCC" />
+            </svg>
+        </a>
+    </div>
+
+</body>
+
+</html>
