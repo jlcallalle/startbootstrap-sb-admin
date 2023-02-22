@@ -2630,6 +2630,8 @@ color: #ED002F!important;
     position: relative;
     .box-alerta {
       margin-top: 12px;
+      max-height: 480px;
+      overflow-y: auto;
       .icon-engraje {
         position: absolute;
         top: 12px;
@@ -2637,6 +2639,8 @@ color: #ED002F!important;
       }
       .item-alerta {
         margin-bottom: 15px;
+        border-bottom: 0.5px solid #CCCCCC;
+        padding-bottom: 10px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -2649,21 +2653,35 @@ color: #ED002F!important;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #424242;
+  color: $grey-dark;
 }
 
 .content-alert {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
-  color: #424242;
+  color: $grey-dark;
 }
 
 .date-alert {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;
-  color: #424242;
+  color: #8A8A8A;
+}
+
+.texto-alert {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  color: $grey-dark;
+}
+
+.dia-alerta {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  color: #245F95;
 }
 
 /* Vista Soporte */
