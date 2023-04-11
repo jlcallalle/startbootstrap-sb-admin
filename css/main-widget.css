@@ -3486,3 +3486,37 @@ button.close:focus {
 .check__input:checked:disabled + .check__box {
   background-color: #9b9b9b;
 }
+
+/* Page Noticias */
+.widget-widget-noticias-fx .container-widget {
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .item-noticia {
+    min-height: 260px;
+  }
+}
+.item-noticia .card-title {
+  display: block;
+  color: #3582FF;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.item-noticia .card-title:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.item-noticia .card-subtitle {
+  color: #424242;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.item-noticia .card-text {
+  color: #424242;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
